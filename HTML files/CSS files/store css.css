@@ -10,10 +10,6 @@ section{
     justify-content: flex-start;
 }
 
-h1{
-    font-size: 5em;
-}
-
 h3{
     font-size: 1.6em;
 }
@@ -24,6 +20,7 @@ header{
 }
 
 .titleFont{
+    font-size: 5em;
     font-family: 'Bebas Neue', sans-serif;
     color: #fdfd96
 }
@@ -38,6 +35,14 @@ header{
 .logo{
     max-width: 6em;
     max-height: auto;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.fadeInAnimation{
+    animation: fadeIn 2s;
 }
 
 /*other pages*/
@@ -55,4 +60,21 @@ header{
 .divcategory{
     margin: 0 auto;
     width: 10%;
+}
+
+.otherpages{
+    font-size: 24px;
+    font-family: monospace;
+    color: #fdfd96;
+    display: block;
+    margin: auto;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.otherpages:hover{
+    color: white;
+    cursor: pointer;
 }
