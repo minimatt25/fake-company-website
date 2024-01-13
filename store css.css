@@ -1,0 +1,58 @@
+/*whole page*/
+body{
+    background-color: #e64b4b;
+}
+
+section{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+h1{
+    font-size: 5em;
+}
+
+h3{
+    font-size: 1.6em;
+}
+
+/*cosmic comics title and logo*/
+header{
+    padding: 0px;
+}
+
+.titleFont{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fdfd96
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+.logo{
+    max-width: 6em;
+    max-height: auto;
+}
+
+/*other pages*/
+.categories{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.categoryFont{
+    font-family: monospace;
+    color: #fdfd96
+}
+
+.divcategory{
+    margin: 0 auto;
+    width: 10%;
+}
