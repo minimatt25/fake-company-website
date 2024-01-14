@@ -4,14 +4,10 @@ body{
 }
 
 section{
-    padding: 20px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-}
-
-h3{
-    font-size: 1.6em;
 }
 
 /*cosmic comics title and logo*/
@@ -20,21 +16,13 @@ header{
 }
 
 .titleFont{
-    font-size: 5em;
     font-family: 'Bebas Neue', sans-serif;
     color: #fdfd96
 }
 
 .name{
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 1em;
-}
-
-.logo{
-    max-width: 6em;
-    max-height: auto;
 }
 
 @keyframes fadeIn {
@@ -59,11 +47,10 @@ header{
 
 .divcategory{
     margin: 0 auto;
-    width: 10%;
 }
 
 .otherpages{
-    font-size: 24px;
+    white-space: nowrap;
     font-family: monospace;
     color: #fdfd96;
     display: block;
@@ -77,4 +64,84 @@ header{
 .otherpages:hover{
     color: white;
     cursor: pointer;
+}
+
+/*if page shrinks*/
+
+@media only screen and (min-width: 1400px) {
+    * {
+        .name{
+            align-items: center;
+            justify-content: center;
+        }
+        .titleFont{
+            font-size: 5em;
+        }
+        .logo{
+            max-width: 6em;
+            max-height: auto;
+        }
+        .divcategory{
+            width: 10%;
+        }
+        .otherpages{
+            font-size: 24px;
+        }
+        .big{
+            display: block;
+        }
+        .small{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1399px ) and (min-width: 900px) {
+    * {
+        .name{
+            align-items: center;
+            justify-content: center;
+        }
+        .titleFont{
+            font-size: 3em;
+        }
+        .logo{
+            max-width: 4em;
+            max-height: auto;
+        }
+        .divcategory{
+            width: 4%;
+        }
+        .otherpages{
+            font-size: 19px;
+        }
+        .big{
+            display: block;
+        }
+        .small{
+            display: none;
+        }
+        }
+}
+
+@media only screen and (max-width: 899px) {
+    * {
+        .name{
+            align-items: center;
+            justify-content: left;
+        }
+        .titleFont{
+            font-size: 3em;
+        }
+        .logo{
+            max-width: 4em;
+            max-height: auto;
+        }
+        .big{
+            display: none;
+        }
+        .small{
+            display: block;
+        }
+    }
 }
