@@ -1,6 +1,6 @@
 /*whole page*/
 body{
-    background-color: #e64b4b;
+    background-color: #04bade;
 }
 
 section{
@@ -17,7 +17,7 @@ header{
 
 .titleFont{
     font-family: 'Bebas Neue', sans-serif;
-    color: #fdfd96
+    color: #000435
 }
 
 .name{
@@ -44,7 +44,7 @@ header{
 
 .categoryFont{
     font-family: monospace;
-    color: #fdfd96
+    color: #000435
 }
 
 .divcategory{
@@ -54,7 +54,7 @@ header{
 .otherpages{
     white-space: nowrap;
     font-family: monospace;
-    color: #fdfd96;
+    color: #000435;
     display: block;
     margin: auto;
     align-items: center;
@@ -71,7 +71,7 @@ header{
 /*paragraphs*/
 .paragraphs{
     font-family: monospace;
-    color: #fdfd96;
+    color: #000435;
     display: block;
     margin: auto;
     align-items: center;
@@ -100,6 +100,7 @@ header{
 }
 
 /*if page shrinks*/
+/*normal*/
 @media only screen and (min-width: 1400px) {
     * {
         .name{
@@ -110,8 +111,10 @@ header{
             font-size: 5em;
         }
         .logo{
-            max-width: 6em;
+            max-width: 5em;
             max-height: auto;
+            padding-bottom: 10px;
+            padding-left: 10px;
         }
         .divcategory{
             width: 10%;
@@ -131,6 +134,7 @@ header{
     }
 }
 
+/*medium*/
 @media only screen and (max-width: 1399px ) and (min-width: 900px) {
     * {
         .name{
@@ -159,9 +163,10 @@ header{
         .small{
             display: none;
         }
-        }
+    }
 }
 
+/*small*/
 @media only screen and (max-width: 899px) {
     * {
         .name{
@@ -220,7 +225,7 @@ header{
     background-color: white;
     width: 150px;
     height: 150px;
-    border: 1px solid black;
+    border: 1px solid #000435;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -234,7 +239,19 @@ header{
 }
 
 .shadow{
-    -mox-box-shadow: 0 0 6px black;
-    -webkit-box-shadow: 0 0 6px black;
-    box-shadow: 0 0 6px black;
+    -mox-box-shadow: 0 0 11px black;
+    -webkit-box-shadow: 0 0 11px black;
+    box-shadow: 0 0 11px black;
+}
+
+
+
+/*code for the comics page*/
+.comics{
+    display: flex;
+    flex-wrap: wrap;
+}
+.comic{
+    width: auto;
+    outline: 2px solid #000435;
 }
