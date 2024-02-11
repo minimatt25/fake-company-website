@@ -126,6 +126,12 @@ header{
             margin: 10px;
         }
 
+        .subPrice{
+            font-size: 18px;
+            padding-left: 45px;
+            padding-top: 10px;
+        }
+
         .otherpages{
             font-size: 24px;
         }
@@ -167,6 +173,13 @@ header{
         .otherpages{
             font-size: 19px;
         }
+
+        .subPrice{
+            font-size: 18px;
+            padding-left: 45px;
+            padding-top: 10px;
+        }
+
         p{
             font-size: 16px;
         }
@@ -212,6 +225,11 @@ header{
             cursor: pointer;
         }
         
+        .subPrice{
+            font-size: 16px;
+            padding-left: 35px;
+            padding-top: 10px;
+        }
     }
 }
 
@@ -265,6 +283,11 @@ header{
     flex: 0 0 calc(12.5%  - 20px);
     box-sizing: border-box;
     margin: 10px;
+    padding-top: 25px;
+}
+
+.subPrice{
+    position: absolute;
 }
 
 .comics{
@@ -296,29 +319,27 @@ header{
 }
 
 .price{
+    padding-top: 20px;
+    padding-left: 20px;
     font-size: 28px;
-}
-
-.addToBasket{
-    color: white;
-    background-color: #000435;
-    border: 1px solid white;
-
+    float: left;
 }
 
 .boxed{
-    position: relative;
-    left: 400px;
-    max-width: 600px;
+    max-width: 500px;
     height: 300px;
     outline: 2px solid #000435;
     background-color: white;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
     
+}
+
+.textBoxPadding{
+    padding-left: 47%;
+    padding-bottom: 40px;
 }
 
 .comicInfo{
