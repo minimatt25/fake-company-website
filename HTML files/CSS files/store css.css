@@ -25,16 +25,6 @@ header{
     margin: 1em;
 }
 
-/*
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-.fadeInAnimation{
-    animation: fadeIn 4s;
-}
-*/
-
 /*other pages*/
 .categories{
     display: flex;
@@ -63,6 +53,7 @@ header{
     text-decoration: none;
     transition: color 0.4s ease-in-out;
 }
+
 .otherpages:hover{
     color: white;
     cursor: pointer;
@@ -126,6 +117,10 @@ header{
             margin: 10px;
         }
 
+        .description{
+            font-size: 17px;
+        }
+
         .subPrice{
             font-size: 18px;
             padding-left: 45px;
@@ -135,20 +130,34 @@ header{
         .otherpages{
             font-size: 24px;
         }
+
+        .comicInfo{
+            width: 15%;
+        }
+
         p{
             font-size: 21px;
         }
+
         .big{
             display: block;
         }
+
         .small{
             display: none;
+        }
+
+        .price{
+            padding-top: 20px;
+            padding-left: 20px;
+            font-size: 28px;
+            float: left;
         }
     }
 }
 
 /*medium*/
-@media only screen and (max-width: 1399px ) and (min-width: 900px) {
+@media only screen and (max-width: 1399px ) and (min-width: 1050px) {
     * {
         .name{
             align-items: center;
@@ -174,53 +183,86 @@ header{
             font-size: 19px;
         }
 
+        .comicInfo{
+            width: 19%;
+        }
+
         .subPrice{
             font-size: 18px;
             padding-left: 45px;
             padding-top: 10px;
         }
 
+        .description{
+            font-size: 17px;
+        }
+
         p{
             font-size: 16px;
         }
+
         .big{
             display: block;
         }
+
         .small{
             display: none;
         }
+
+        .recommended{
+            display: none;
+        }
+
+        .price{
+            padding-top: 20px;
+            padding-left: 20px;
+            font-size: 28px;
+            float: left;
+        }
+        
     }
 }
 
 /*small*/
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 1049px) {
     * {
         .name{
             align-items: center;
             justify-content: left;
         }
+
         .titleFont{
             font-size: 3em;
         }
+        
         .logo{
             max-width: 4em;
             max-height: auto;
         }
+
         p{
             font-size: 13px;
         }
+
         .big{
             display: none;
         }
+
+        .medium{
+            display: none;
+        }
+
         .small{
             display: block;
         }
+
         .icon{
             padding-left: 20px;
             display: inline-block;
             align-items: right;
             justify-content: right;
         }
+
         .icon:hover{
             cursor: pointer;
         }
@@ -230,6 +272,27 @@ header{
             padding-left: 35px;
             padding-top: 10px;
         }
+
+        .recommended{
+            display: none;
+        }
+
+        .price{
+            padding: 10px;
+            padding-top: 20px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .description{
+            margin-left: 200px;
+            padding: 5px;
+            outline: 2px solid #000435;
+            background-color: white;
+            font-size: 15px;
+        }
+
     }
 }
 
@@ -313,16 +376,21 @@ header{
     outline: 2px solid #000435;
 }
 
+.smallBigComic{
+    display: flex;
+    float: left;
+    outline: 2px solid #000435;
+}
+
 .bigPicPadding{
     padding-left: 20px;
     padding-top: 10px;
 }
 
-.price{
-    padding-top: 20px;
+.smallBigPicPadding{
     padding-left: 20px;
-    font-size: 28px;
-    float: left;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 .boxed{
@@ -331,17 +399,34 @@ header{
     outline: 2px solid #000435;
     background-color: white;
     display: flex;
-    flex-direction: row;
-    /*align-items: center;*/
-    /*justify-content: center;*/
-    
+    flex-direction: column;
 }
 
 .textBoxPadding{
-    padding-left: 47%;
+    padding-left: 67px;
     padding-bottom: 40px;
+}
+
+.parallel{
+    display: flex;
+}
+
+.recommended{
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    margin-left: 10%;
+    width: auto;
+    height: 200px;
+    background-color: white;
+    border: 2px solid #000435;
 }
 
 .comicInfo{
     font-size: 16px;
+    background-color: white;
+    border: 2px solid #000435;
+    padding: 8px;
+    text-align: center;
+    margin: 0 auto;
 }
