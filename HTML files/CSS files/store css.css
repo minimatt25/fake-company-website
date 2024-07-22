@@ -54,6 +54,13 @@ header{
     transition: color 0.4s ease-in-out;
 }
 
+/*basket buttons used for all items on main pages*/
+.basketButton{
+    display: block;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
 .otherpages:hover{
     color: white;
     cursor: pointer;
@@ -98,15 +105,31 @@ header{
             align-items: center;
             justify-content: center;
         }
+
         .titleFont{
             font-size: 5em;
         }
+
         .logo{
             max-width: 5em;
             max-height: auto;
             padding-bottom: 10px;
             padding-left: 10px;
         }
+
+        .cart{
+            max-width: 4em;
+            max-height: auto;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .cartPlacement{
+            position: absolute;
+            right: 70px;
+            top:95px;
+        }
+
         .divcategory{
             width: 10%;
         }
@@ -170,6 +193,17 @@ header{
             max-width: 4em;
             max-height: auto;
         }
+        .cart{
+            max-width: 3em;
+            max-height: auto;
+        }
+
+        .cartPlacement{
+            position: absolute;
+            right: 30px;
+            top:55px;
+        }
+
         .divcategory{
             width: 4%;
         }
@@ -237,6 +271,11 @@ header{
         
         .logo{
             max-width: 4em;
+            max-height: auto;
+        }
+
+        .cart{
+            max-width: 3em;
             max-height: auto;
         }
 
@@ -430,3 +469,5 @@ header{
     text-align: center;
     margin: 0 auto;
 }
+
+/*code for toys page*/
