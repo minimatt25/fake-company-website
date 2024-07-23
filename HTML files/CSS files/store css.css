@@ -140,6 +140,29 @@ button{
             top:95px;
         }
 
+        .cartBoxes{
+            background-color: white;
+            padding: 50px;
+            border: 1px solid #000435;
+            border-radius: 12px;
+            margin-top: 70px;
+
+            font-family: monospace;
+            color: #000435;
+            display: block;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .itemList{
+            min-width: 550px;
+            min-height: 350px;
+        }
+
+        .priceBox{
+            min-width: 350px;
+        }
+
         .divcategory{
             width: 10%;
         }

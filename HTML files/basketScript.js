@@ -5,8 +5,19 @@ if(localStorage.getItem("money")!=""){
     basketVal = parseInt(localStorage.getItem("money"));
 }
 
+if(localStorage.getItem("amount")!=""){
+    basketNum = parseInt(localStorage.getItem("amount"));
+}
+
 console.log(basketVal);
+console.log(basketNum);
+
+//for basket in corners
 document.getElementById("cost").innerHTML = "£" + (Math.round(basketVal * 100) / 100).toFixed(2);
+
+//for main basket page
+document.getElementById("total").innerHTML = "£" + (Math.round(basketVal * 100) / 100).toFixed(2);
+document.getElementById("items").innerHTML = "Items: " + basketNum;
 
 function addToB(clickedID){
 
@@ -29,6 +40,7 @@ function addToB(clickedID){
     //items in the basket
     basketNum+=1;
     console.log(basketNum);
+    localStorage.setItem("amount", basketNum);
     if(basketNum!=1){
         document.getElementById("items").innerHTML = basketNum;
     } else{
@@ -38,6 +50,10 @@ function addToB(clickedID){
 
 function resetBasket(){
     basketVal = 0;
+    basketNum = 0;
     console.log(basketVal);
+    localStorage.setItem("money", basketVal);
+    console.log(basketNum);
+    localStorage.setItem("amount", basketNum);
     document.getElementById("cost").innerHTML = "£" + (Math.round(basketVal * 100) / 100).toFixed(2);
 }
