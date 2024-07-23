@@ -16,6 +16,14 @@
                     <h1 class="titleFont">Comics</h1>
                     <a href="../Home Page.html"><img src="../Pictures and Icons/new logo.png" alt="logo" class="logo"></a>
                 </div>
+
+                <div class="cartPlacement">
+                    <section>
+                        <p id="cost" class="categoryFont"></p>
+                        <a href="../cart.html"><img src="../Pictures and Icons/cart.png" alt="shopping cart" class="cart"></a>
+                    </section>
+                </div>
+
             </header>
         
             <section>
@@ -34,7 +42,7 @@
             <div class="parallel">
                 <div class="textBoxPadding">
                     <section class="boxed">
-                        <div class="categoryFont  price">£10.00 <button type="button" onclick="alert('I have not done Javascript yet, so there is not a shopping cart.')">add to basket</button></div>
+                        <div class="categoryFont  price">£10.00 <button type="button" id="year one" onclick="addToB(this.id)">Add to Basket</button></div>
                         <br>
                         <p class="categoryFont description">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur, tempore quisquam eveniet est quis beatae soluta
                              cumque facere sit aperiam, earum unde, veritatis voluptates consequuntur animi illo rerum dignissimos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
@@ -68,10 +76,14 @@
             <hr>
             <div class="smallBigPicPadding"><img src="../Comic covers/Big comic cover/Batman year one.jpg" alt="Year one" class="smallBigComic"></div>
             <h3 class="subTitle categoryFont"><u>Year one</u></h3>
-            <div class="categoryFont  price">£10.00<button type="button" onclick="alert('I have not done Javascript yet, so there is not a shopping cart.')">add to basket</button></div>
+            <div class="categoryFont  price">£10.00<button type="button" id="year one" onclick="addToB(this.id)">Add to Basket</button></div>
             <p class="categoryFont description">Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aspernatur, tempore quisquam eveniet est quis beatae soluta
                 cumque facere sit aperiam, earum unde, veritatis voluptates consequuntur animi illo rerum dignissimos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
                  asperiores consequatur harum ut porro unde perferendis inventore, enim aut ipsa incidunt voluptate labore optio iure. Similique asperiores voluptas ab commodi.</p>
         </nav>
+
+        <!--javascript link-->
+        <script src="../basketScript.js"></script>
+
     </body>
 </html>

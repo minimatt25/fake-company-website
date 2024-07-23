@@ -26,13 +26,16 @@ function addToB(clickedID){
     //comics
     if(clickedID == "Invincible c1" || clickedID == "Invincible c2" || clickedID == "Invincible c3"){
         basketVal+=39.99;
-    } else if(clickedID == "Secret invasion" || clickedID == "Civil war" || clickedID == "long halloween"){
-        basketVal+=20;
-    } else if(clickedID == "year one"){
-        basketVal+=10;
     } else if(clickedID == "Watchmen"){
         basketVal+=25;
-    }
+    } else if(clickedID == "Secret invasion" || clickedID == "Civil war" || clickedID == "long halloween" || clickedID == "placeholder"){
+        basketVal+=20;
+    } else if(clickedID == "Umbrella 1" || clickedID == "Umbrella 2" || clickedID == "Umbrella 3" ){
+        basketVal+=15;
+    } else if(clickedID == "year one"){
+        basketVal+=10;
+    } 
+
     console.log(basketVal);
     localStorage.setItem("money", basketVal);
     document.getElementById("cost").innerHTML = "£" + (Math.round(basketVal * 100) / 100).toFixed(2);
