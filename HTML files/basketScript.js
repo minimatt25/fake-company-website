@@ -1,16 +1,14 @@
 let basketNum = 0;
 let basketVal = 0;
 
-function addToB(clickedID){
+if(localStorage.getItem("money")!=""){
+    basketVal = parseInt(localStorage.getItem("money"));
+}
 
-    //items in the basket
-    basketNum+=1;
-    console.log(basketNum);
-    if(basketNum!=1){
-        document.getElementById("items").innerHTML = basketNum;
-    } else{
-        document.getElementById("items").innerHTML = basketNum;
-    }
+console.log(basketVal);
+document.getElementById("cost").innerHTML = "£" + (Math.round(basketVal * 100) / 100).toFixed(2);
+
+function addToB(clickedID){
 
     //price of items overall
 
@@ -24,6 +22,22 @@ function addToB(clickedID){
     } else if(clickedID == "Watchmen"){
         basketVal+=25;
     }
+    console.log(basketVal);
+    localStorage.setItem("money", basketVal);
+    document.getElementById("cost").innerHTML = "£" + (Math.round(basketVal * 100) / 100).toFixed(2);
+
+    //items in the basket
+    basketNum+=1;
+    console.log(basketNum);
+    if(basketNum!=1){
+        document.getElementById("items").innerHTML = basketNum;
+    } else{
+        document.getElementById("items").innerHTML = basketNum;
+    }
+}
+
+function resetBasket(){
+    basketVal = 0;
     console.log(basketVal);
     document.getElementById("cost").innerHTML = "£" + (Math.round(basketVal * 100) / 100).toFixed(2);
 }
