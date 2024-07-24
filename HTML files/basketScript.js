@@ -16,7 +16,7 @@ console.log(basketNum);
 document.getElementById("cost").innerHTML = "£" + (Math.round(basketVal * 100) / 100).toFixed(2);
 
 //for main basket page
-document.getElementById("total").innerHTML = "£" + (Math.round(basketVal * 100) / 100).toFixed(2);
+document.getElementById("total").innerHTML = "Price: £" + (Math.round(basketVal * 100) / 100).toFixed(2);
 document.getElementById("items").innerHTML = "Items: " + basketNum;
 
 function addToB(clickedID){

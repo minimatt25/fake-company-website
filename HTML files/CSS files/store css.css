@@ -62,7 +62,7 @@ header{
 /*basket buttons used for all items on main pages*/
 .basketButton{
     display: block;
-    margin-left: 20px;
+    margin-left: 23px;
     margin-top: 40px;
 }
 
@@ -74,6 +74,18 @@ button{
     border-radius: 12px;
     font-family: monospace;
     color: #000435;
+}
+
+.discounted{
+    text-decoration: line-through;
+    padding-left: 13px;
+    font-size: 18px;
+}
+
+.discount{
+    color: red;
+    font-size: 18px;
+    padding-left: 5px;
 }
 
 /*paragraphs*/
@@ -179,8 +191,18 @@ button{
 
         .subPrice{
             font-size: 18px;
-            padding-left: 45px;
+            padding-left: 50px;
             padding-top: 10px;
+        }
+
+        .itemName{
+            font-size: 14px;
+            padding-top: 10px;
+            padding-left: 1px;
+            padding-right: 45px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
         }
 
         .otherpages{
@@ -256,8 +278,16 @@ button{
 
         .subPrice{
             font-size: 18px;
-            padding-left: 45px;
+            padding-left: 50px;
             padding-top: 10px;
+        }
+
+        .itemName{
+            font-size: 14px;
+            padding-top: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
         }
 
         .description{
@@ -341,8 +371,16 @@ button{
         
         .subPrice{
             font-size: 16px;
-            padding-left: 35px;
+            padding-left: 50px;
             padding-top: 10px;
+        }
+
+        .itemName{
+            font-size: 14px;
+            padding-top: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
         }
 
         .recommended{
@@ -432,8 +470,13 @@ button{
 }
 
 .comic{
+    min-width: 163px;
+    min-height: 250px;
+    max-width: 163px;
+    max-height: 250px;
     outline: 2px solid #000435;
     display: block;
+    background-color: white;
 }
 
 .subTitle{
